@@ -1,0 +1,39 @@
+.footer-container {
+  margin: 45px 0 60px 0;
+  // background-color: #1c1f25;
+  h3 {
+    margin: 0 0 15px;
+  }
+  a {
+    box-shadow: none;
+    color: #ffffff;
+  }
+}
+.row2 {
+  margin-top: 40px;
+  display: flex;
+  div {
+    flex: 0 0 33.333%;
+  }
+  div a:first-child {
+    margin-right: 20px;
+  }
+  div:last-child {
+    flex: 0 0 19.8%;
+    margin-left: auto;
+  }
+}
+
+.row3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  .links {
+    a {
+      margin-right: 30px;
+    }
+    a:last-child {
+      margin-right: 0px;
+    }
+  }
+}
