@@ -1,15 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
-import headerStyle from "./style/layout.module.scss"
-
+// import { rhythm, scale } from "../utils/typography"
+import headerStyle from "./style/header.module.scss"
 
 const Header = ({ pathname, rootPath, title }) => {
   return (
     <header>
-      <div className={headerStyle.navContainer}>
-      {pathname === rootPath ? (
+      <div className={headerStyle.headerContainer}>
+        {/* {pathname === rootPath ? (
         <h2
           style={{
             // ...scale(1.5),
@@ -21,45 +20,53 @@ const Header = ({ pathname, rootPath, title }) => {
             {title}
           </Link>
         </h2>
-      ) : (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
+      ) : ( */}
+          <h3 className={headerStyle.title}>
           <Link className={headerStyle.navHeader} to={`/`}>
             {title}
+            {/* <div className={headerStyle.logo}></div> */}
           </Link>
-        </h3>
-      )}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-        }}
-        className={headerStyle.nav}
-      >
-        <h2 className={headerStyle.h2Style}>
-          <Link
-            to="/projects"
-            className={headerStyle.navItem}
-            activeClassName={headerStyle.activeNavItem}
-          >
-            Projects
-          </Link>
-        </h2>
-        <h2 className={headerStyle.h2Style}>
-          {" "}
-          <Link
-            to="/vacancy"
-            className={headerStyle.navItem}
-            activeClassName={headerStyle.activeNavItem}
-          >
-            Vacancy
-          </Link>
-        </h2>
-      </div>
+          </h3>
+        <nav>
+          <ul className={headerStyle.navContainer}>
+            <li>
+              <Link
+                to="/projects"
+                className={headerStyle.navItem}
+                activeClassName={headerStyle.activeNavItem}
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blog"
+                className={headerStyle.navItem}
+                activeClassName={headerStyle.activeNavItem}
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className={headerStyle.navItem}
+                activeClassName={headerStyle.activeNavItem}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/career"
+                className={headerStyle.navItem}
+                activeClassName={headerStyle.activeNavItem}
+              >
+                Career
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   )

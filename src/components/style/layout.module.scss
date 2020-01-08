@@ -1,24 +1,8 @@
-.nav-item {
-  box-shadow: none;
-  text-decoration: none;
-  color: #666666;
+.app-container {
+  background-color: #23272d;
+  color: white;
 }
-.nav-item:hover {
-  color: #999999;
-}
-.activeNavItem {
-  color: #000000;
-}
-.nav-header {
-  box-shadow: none;
-  text-decoration: none;
-  color: #000000;
-}
-.h2-style {
-  margin-top: 5px;
-}
-.nav-container { 
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+.layout-container {
+  margin: 0 auto;
+  max-width: 1140px;
 }
