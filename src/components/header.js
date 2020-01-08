@@ -6,8 +6,8 @@ import headerStyle from "./style/header.module.scss"
 
 const Header = ({ pathname, rootPath, title }) => {
   return (
-    <header>
-      <div className={headerStyle.headerContainer}>
+    <header className={headerStyle.headerContainer}>
+      <div className={headerStyle.headerWrapper}>
         {/* {pathname === rootPath ? (
         <h2
           style={{

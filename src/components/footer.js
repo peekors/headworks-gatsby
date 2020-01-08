@@ -6,7 +6,7 @@ import style from "./style/footer.module.scss"
 
 const Footer = () => {
   return (
-    <footer className={style.footerBorder}>
+    <footer className={style.footerWrapper}>
       <div className={style.footerContainer}>
       <div className={style.row1}>
         <h3>Business without limits with HeadWorks</h3>
@@ -48,15 +48,11 @@ const Footer = () => {
         </div>
         <div>
           ©{" "}
-          <span content="2014" itemprop="startDate">
+          <span>
             2014
           </span>
           -2020{" "}
-          <span
-            itemprop="legalName"
-            itemscope=""
-            itemtype="http://schema.org/Organization"
-          >
+          <span>
             HeadWorks
           </span>
         </div>

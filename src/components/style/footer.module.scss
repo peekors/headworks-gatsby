@@ -1,6 +1,11 @@
+.footer-wrapper {
+  background-color: #1c1f25;
+  padding: 40px 0;
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.8)
+}
 .footer-container {
-  margin: 45px 0 60px 0;
-  // background-color: #1c1f25;
+  margin: 0 auto;
+  max-width: 1140px;
   h3 {
     margin: 0 0 15px;
   }

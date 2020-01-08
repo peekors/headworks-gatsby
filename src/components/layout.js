@@ -11,16 +11,17 @@ class Layout extends React.Component {
 
     return (
       <div className={style.appContainer}>
-        <div className={style.layoutContainer}>
+        
           <Header
             pathname={location.pathname}
             rootPath={rootPath}
             title={title}
           />
-          <main>{children}</main>
+          <div className={style.layoutContainer}>
+            <main>{children}</main>
+          </div>
 
           <Footer />
-        </div>
       </div>
     )
   }
