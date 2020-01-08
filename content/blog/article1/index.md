@@ -1,7 +1,7 @@
 ---
-title: Hello World
+title: 'First blog #1'
 date: '2015-05-01T22:12:03.284Z'
-description: article 1231
+description: 'article 1231 -_-  '
 ---
 This is my first post on my new fake blog! How exciting!
 
